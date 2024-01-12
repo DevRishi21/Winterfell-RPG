@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>WELCOME TO WINTERFELL</title>
+</head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/0c3ba3c132.js" crossorigin="anonymous"></script>
+
+<body>
+
+<div id="game">
+    <!-- my stats -->
+    <div id="stats">
+        <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+        <span class="stat">Health: <strong><span id="healthText">100</span> <i class="fa-solid fa-droplet" style="color: red;"></i></strong></span>
+        <span class="stat">Gold: <strong><span id="goldText">50</span> <i class="fa-solid fa-coins" style="color: gold;"></i></strong></span>
+    </div>
+    <div id="controls">
+        <button id="button1"class="btn-success" onclick="goToShop()">Shop</button>
+        <button id="button2" class="btn-success" onclick="goBeyondWall()">Go beyond the wall</button>
+        <button id="button3" class="btn-danger">Fight the Night King</button>
+        <button id="button4" class="btn-success" style="float: right;">Instructions</button>
+    </div>
+    <div id="monsterStats">
+        <span class="stat">Enemy Name: <strong><span id="enemyName"></span></strong></span>
+        <span class="stat">Health: <strong><span id="enemyHealth"></span></strong></span>
+    </div>
+    <div id="text">
+       Welcome to Game of Thrones-RPG. 
+        You are Jon Snow son of Ned Stark. 
+        You are in Winterfell. Where do you want to go? Use the buttons above.
+    </div>
+    
+</div>
+<footer id="footer">&copy;Developed by RISHI</footer>
+    <script src="winterfell.js"></script>
+</body>
+</html>
